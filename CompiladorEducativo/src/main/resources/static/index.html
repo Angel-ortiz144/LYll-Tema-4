@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Compilador Educativo
+    </title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        🖥️ COMPILADOR EDUCATIVO
+    </h1>
+
+    <p>
+        Análisis Semántico |
+        Código Intermedio |
+        Optimización |
+        Código Objeto
+    </p>
+
+</header>
+
+
+<main class="contenedor">
+
+
+    <!-- ==========================================
+         EDITOR
+         ========================================== -->
+
+    <section class="editor">
+
+        <h2>
+            📝 Código fuente
+        </h2>
+
+        <textarea id="codigo">int a = 10;
+int b = 20;
+int c;
+
+c = a + b * 2;
+
+suma = 10 + 20;
+resta = 50 - 20;
+multiplicacion = 5 * 4;</textarea>
+
+
+        <div class="botones">
+
+            <button
+                    class="btn-analizar"
+                    onclick="analizar()">
+
+                ▶ ANALIZAR
+
+            </button>
+
+            <button
+                    onclick="ejemplo()">
+
+                📄 EJEMPLO
+
+            </button>
+
+            <button
+                    onclick="limpiar()">
+
+                🗑 LIMPIAR
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         MENÚ
+         ========================================== -->
+
+    <section class="menu">
+
+        <h2>
+            📚 Temas
+        </h2>
+
+        <button
+                onclick="mostrar('semantico')">
+
+            1. Análisis semántico
+
+        </button>
+
+        <button
+                onclick="mostrar('intermedio')">
+
+            2. Código intermedio
+
+        </button>
+
+        <button
+                onclick="mostrar('optimizacion')">
+
+            3. Optimización
+
+        </button>
+
+        <button
+                onclick="mostrar('objeto')">
+
+            4. Código objeto
+
+        </button>
+
+    </section>
+
+
+    <!-- ==========================================
+         RESULTADOS
+         ========================================== -->
+
+    <section class="resultados">
+
+        <h2>
+            📊 Resultados
+        </h2>
+
+        <div id="mensaje"
+             class="mensaje">
+
+            Presiona ANALIZAR para comenzar.
+
+        </div>
+
+        <div id="contenido">
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
